@@ -1,187 +1,180 @@
-# 🧩 Projetos de Consultoria SAP Business One
+# 🧩 SAP Business One Projects
 
-
-Repositório contendo o portfólio de projetos desenvolvidos em **C# / .NET** com foco em **integrações e add-ons para o SAP Business One**, abrangendo automações, portais, APIs RESTful e soluções corporativas.
-
-Os projetos foram implementados em diferentes empresas de consultoria SAP, atendendo diversos segmentos de negócio, com uso de tecnologias modernas e práticas avançadas de integração e arquitetura.
+Repository featuring solutions developed in C# / .NET, focused on integrations, automations, and corporate add-ons for SAP Business One.  
+The projects include add-ons, services, portals, and RESTful APIs, implemented across various SAP consulting firms and applied to multiple business sectors.  
+Each project leverages modern technologies and well-established practices in architecture, integration, and performance, ensuring robustness, scalability, and adherence to SAP ecosystem best practices.
 
 #### Note: The original source codes and repositories are the property of the company and cannot be publicly shared. The information provided here is generic, focusing on my technical contributions.
 ---
 
-## 🏢 Empresa: **Neocantra**
+## 🏢 Company: **Neocantra**
 
+### 🌐 **Portals**
 
-### 🌐 **Portais**
-
-#### 🔸 Portal de Canais  
-Portal interno para que os canais da consultoria visualizassem a tabela de preços das licenças SAP Business One ofertadas.  
-**🔧 Tecnologias:** C#, .NET Framework 4.8, Gvince Framework.
+#### 🔸 Channel Portal  
+Internal consulting portal providing information and simulations of SAP Business One license price tables offered to clients.  
+**🔧 Technologies:** C#, .NET Framework 4.8, Gvince Framework.
 
 ---
 
-## 🏢 Empresa: **B2Finance**
+## 🏢 Company: **B2Finance**
 
+### ⚙️ **Services**
 
-### ⚙️ **Serviços**
+#### 🔸 CTe Cost Allocation Service  
+Performs allocation of the CTe amount according to the cost centers from the outbound invoice’s LCM.  
+**🔧 Technologies:** C#, .NET Framework 4.8, B1SLayer.
 
-#### 🔸 Serviço de Rateio CTe  
-Realiza o rateio do valor do CTe conforme os centros de custo do LCM da nota de saída.  
-**🔧 Tecnologias:** C#, .NET Framework 4.8, SAP DI API.
+#### 🔸 Email Service  
+Automatically sends reminder emails for overdue and upcoming invoices.  
+**🔧 Technologies:** C#, .NET 7, SMTP, B1SLayer.
 
-#### 🔸 Serviço de E-mails  
-Envio automático de e-mails de cobrança de faturas vencidas e a vencer.  
-**🔧 Tecnologias:** C#, .NET 7, SMTP.
-
-#### 🔸 Serviço de Inserção de Documentos Aprovados  
-Realiza a inserção automática de esboços de documentos aprovados em fluxos de aprovação.  
-**🔧 Tecnologias:** C#, .NET 8, B1SLayer.
+#### 🔸 Approved Documents Insertion Service  
+Automatically inserts approved marketing document drafts from approval workflows into SAP.  
+**🔧 Technologies:** C#, .NET 8, B1SLayer.
 
 ---
 
 ### 🔗 **APIs**
 
-#### 🔸 Integração SAP Ariba  
-Integra esboços de pedidos de venda do SAP Business One com o sistema de compras **SAP Ariba**.  
-**🔧 Tecnologias:** C#, .NET 7, B1SLayer, SAP HANA Core 2.
+#### 🔸 SAP Ariba Integration  
+Integrates SAP Business One sales order drafts with the **SAP Ariba** procurement system.  
+**🔧 Technologies:** C#, .NET 7, B1SLayer, SAP HANA Core 2.
 
-#### 🔸 Integração SAP e Sistema Kisense  
-Integra notas de saída do SAP com o sistema de gestão de energia **Kisense**.  
-**🔧 Tecnologias:** C#, .NET 6, Service Layer, SAP HANA.
+#### 🔸 SAP and Kisense System Integration  
+Integrates SAP outbound invoices with the **Kisense** energy management system.  
+**🔧 Technologies:** C#, .NET 6, Service Layer, SAP HANA, B1SLayer.
 
-#### 🔸 Integração SAP e Sistema Flash Expense  
-Integra notas de entrada do SAP com o sistema de gestão de despesas **Flash Expense**.  
-**🔧 Tecnologias:** C#, .NET 6, Service Layer.
+#### 🔸 SAP and Flash Expense System Integration  
+Integrates SAP incoming invoices with the **Flash Expense** expense management system.  
+**🔧 Technologies:** C#, .NET 6, Service Layer, B1SLayer.
 
-#### 🔸 Integração SAP e Sistema Varitus  
-Integra notas e XMLs do sistema **Varitus** para o SAP Business One (tabelas independentes).  
-**🔧 Tecnologias:** C#, .NET 6, HANA, Service Layer.
+#### 🔸 SAP and Varitus System Integration  
+Integrates invoices and XML files from **Varitus** into SAP Business One (custom tables).  
+**🔧 Technologies:** C#, .NET 6, HANA, Service Layer, B1SLayer.
 
-#### 🔸 Integração SAP e Sistema FM Logistic  
-Integra pedidos de venda, lista de picking e recebimento de mercadorias a partir de arquivos `.txt` do sistema **FM Logistic**.  
-**🔧 Tecnologias:** C#, .NET 6, File Processing, Service Layer.
+#### 🔸 SAP and FM Logistic System Integration  
+Integrates sales orders, picking lists, and goods receipts from `.txt` files generated by **FM Logistic**.  
+**🔧 Technologies:** C#, .NET 6, File Processing, Service Layer, B1SLayer.
 
-#### 🔸 Integração SAP e HubSpot  
-Notifica a API do **HubSpot** sobre novos pedidos de venda ou atualizações.  
-**🔧 Tecnologias:** C#, .NET 7, Service Layer, HubSpot API.
+#### 🔸 SAP and HubSpot Integration  
+Integration that notifies the **HubSpot** API of new or updated sales orders.  
+**🔧 Technologies:** C#, .NET 7, Service Layer, HubSpot API, B1SLayer.
 
-#### 🔸 API de Parceiros de Negócios (PNs)  
-Criação e atualização de parceiros de negócio no SAP Business One via API RESTful.  
-**🔧 Tecnologias:** C#, .NET 6, Service Layer.
+#### 🔸 Business Partners (BP) API  
+Creates and updates business partners in SAP Business One via RESTful API.  
+**🔧 Technologies:** C#, .NET 6, Service Layer, B1SLayer.
 
-#### 🔸 API de Boleto e Nota Fiscal  
-Retorna o **Base64** do PDF do boleto e da nota fiscal de saída a partir do `DocEntry`.  
-**🔧 Tecnologias:** C#, .NET 6, Service Layer.
+#### 🔸 Invoice and Boleto API  
+Returns the **Base64** of the boleto and outbound invoice PDF using the `DocEntry`.  
+**🔧 Technologies:** C#, .NET 6, Service Layer, B1SLayer.
 
-#### 🔸 API de Pagamentos  
-Disponibiliza o status de pagamento das notas fiscais de saída dos clientes.  
-**🔧 Tecnologias:** C#, .NET 7, B1SLayer, HANA.
+#### 🔸 Payments API  
+Provides payment status for clients’ outbound invoices.  
+**🔧 Technologies:** C#, .NET 7, B1SLayer, HANA.
 
 ---
 
 ### 🧩 **Add-ons**
 
-#### 🔸 Add-on de Seleção de Lote  
-Seleção automática de lotes conforme a regra **FEFO (First Expired, First Out)**.  
-**🔧 Tecnologias:** C#, DI API, UI API.
+#### 🔸 Batch Selection Add-on  
+Automatically selects item batches according to the **FEFO (First Expired, First Out)** rule.  
+**🔧 Technologies:** C#, DI API, UI API.
 
-#### 🔸 Add-on Importador de LCM  
-Importação de lançamentos contábeis manuais a partir de planilhas Excel.  
-**🔧 Tecnologias:** C#, Service Layer, UI API.
+#### 🔸 LCM Importer Add-on  
+Imports manual accounting entries from Excel spreadsheets.  
+**🔧 Technologies:** C#, Service Layer, UI API, B1SLayer.
 
-#### 🔸 Add-on de Folha de Pagamento  
-Integração com sistemas de folha de pagamento via arquivos `.txt`, permitindo geração e importação de LCM/Pré-LCM.  
-**🔧 Tecnologias:** C#, DI API, UI API, Service Layer.
+#### 🔸 Payroll Add-on  
+Integration with payroll systems via `.txt` files, allowing generation and import of LCM/Pre-LCM data.  
+**🔧 Technologies:** C#, DI API, UI API, Service Layer.
 
-#### 🔸 Add-on de Gestão de Orçamento  
-Gestão orçamentária com base nas regras americanas de exercício contábil (Nov/2024).  
-**🔧 Tecnologias:** C#, DI API, UI API.
+#### 🔸 Budget Management Add-on  
+Implements budget management based on U.S. fiscal year accounting rules (Nov/2024).  
+**🔧 Technologies:** C#, DI API, UI API.
 
-#### 🔸 Add-on de Item Alternativo  
-Auxilia na escolha de itens alternativos em pedidos de venda e compra, exibindo informações de estoque.  
-**🔧 Tecnologias:** C#, DI API, UI API.
+#### 🔸 Alternative Item Add-on  
+Assists in selecting alternative items for sales and purchase orders, displaying stock information.  
+**🔧 Technologies:** C#, DI API, UI API.
 
-#### 🔸 Add-on de Fluxo de Caixa  
-Geração do fluxo de caixa por conta contábil e centro de custo em um período específico.  
-**🔧 Tecnologias:** C#, DI API, UI API.
+#### 🔸 Cash Flow Add-on  
+Generates cash flow reports by account and cost center for a given period.  
+**🔧 Technologies:** C#, DI API, UI API.
 
-#### 🔸 Add-on de Encerramento de Período  
-Realiza o fechamento de períodos contábeis agrupados por centro de custo.  
-**🔧 Tecnologias:** C#, DI API, UI API.
+#### 🔸 Period Closing Add-on  
+Performs accounting period closures grouped by cost center.  
+**🔧 Technologies:** C#, DI API, UI API.
 
-#### 🔸 Add-on de Integração de Estoque  
-Integra quantidades de estoque internacional dos itens do SAP.  
-**🔧 Tecnologias:** C#, Service Layer, DI API.
+#### 🔸 Inventory Integration Add-on  
+Integrates international item inventory data from SAP.  
+**🔧 Technologies:** C#, Service Layer, DI API.
 
-#### 🔸 Add-on de Cálculo de Juros  
-Calcula juros com base na condição de pagamento e aplica o valor na nota como despesa adicional.  
-**🔧 Tecnologias:** C#, DI API, UI API.
+#### 🔸 Interest Calculation Add-on  
+Calculates interest based on payment terms and applies the value as an additional expense on the invoice.  
+**🔧 Technologies:** C#, DI API, UI API.
 
-#### 🔸 Add-on Mala Direta  
-Automatiza o envio de e-mails de faturamento, cobrança e comunicações preventivas com templates customizados.  
-**🔧 Tecnologias:** C#, DI API, UI API.
+#### 🔸 Mail Merge Add-on  
+Automates sending of billing, collection, and preventive communication emails using custom templates.  
+**🔧 Technologies:** C#, DI API, UI API.
 
-#### 🔸 Add-on Replicante  
-Replica contas contábeis entre diferentes bases do SAP Business One.  
-**🔧 Tecnologias:** C#, DI API.
+#### 🔸 Replicator Add-on  
+Replicates chart of accounts between different SAP Business One databases.  
+**🔧 Technologies:** C#, DI API.
 
-#### 🔸 Add-on de Gestão Inteligente de Documentos  
-Realiza inserção de notas fiscais de entrada a partir de PDFs, com integração OCR e IA para extração e mapeamento de dados.  
-**🔧 Tecnologias:** C#, .NET 7, OCR API, SQL Server, Service Layer.
-
----
-
-## 🏢 Empresa: **NEXX Consulting**
-
-
-### 🌐 **Portais**
-
-#### 🔸 Portal de Apontamentos  
-Portal para controle e registro de apontamentos de horas e tarefas internas.  
-**🔧 Tecnologias:** Angular 19, TypeScript.
+#### 🔸 Intelligent Document Management Add-on  
+Processes incoming invoice PDFs using OCR and AI for data extraction and mapping.  
+**🔧 Technologies:** C#, .NET 7, OCR API, SQL Server, Service Layer, UI API.
 
 ---
 
-### ⚙️ **Serviços**
+## 🏢 Company: **NEXX Consulting**
 
-#### 🔸 Integração SAP e Sistema SAWLUZ  
-Integra pedidos e cotações de vendas com o sistema logístico **SAWLUZ** via arquivos `.txt`.  
-**🔧 Tecnologias:** C#, .NET 8, File System Integration, Service Layer.
+### 🌐 **Portals**
 
-#### 🔸 Integração SAP e Sistema CORPEM  
-Integra itens, notas de saída, pedidos e devoluções entre SAP e **CORPEM**.  
-**🔧 Tecnologias:** C#, .NET 8, Service Layer, SAP HANA.
+#### 🔸 Production Reporting Portal  
+Portal for controlling and logging production order time tracking from SAP B1.  
+**🔧 Technologies:** Angular 19, TypeScript, C#, .NET 8, Service Layer.
 
-#### 🔸 Integração SAP e Salesforce  
-Integra parceiros, itens, formas e condições de pagamento, lista de preços, estoque e pedidos entre SAP e **Salesforce**.  
-**🔧 Tecnologias:** C#, .NET 8, Service Layer, Salesforce API.
+---
+
+### ⚙️ **Services**
+
+#### 🔸 SAP and SAWLUZ System Integration  
+Integrates sales orders and quotations with the **SAWLUZ** logistics system via `.txt` files.  
+**🔧 Technologies:** C#, .NET 8, File System Integration, Service Layer.
+
+#### 🔸 SAP and CORPEM System Integration  
+Integrates items, outbound invoices, orders, and returns between SAP and **CORPEM**.  
+**🔧 Technologies:** C#, .NET 8, Service Layer, SAP HANA.
+
+#### 🔸 SAP and Salesforce Integration  
+Integrates business partners, items, payment terms, price lists, stock, and orders between SAP and **Salesforce**.  
+**🔧 Technologies:** C#, .NET 8, Service Layer, Salesforce API.
 
 ---
 
 ### 🔗 **APIs**
 
-#### 🔸 Integração Salesforce e SAP  
-API bidirecional para sincronização de parceiros, pedidos e estoque entre **Salesforce** e SAP Business One.  
-**🔧 Tecnologias:** C#, .NET 8, REST API, Salesforce SDK.
+#### 🔸 Salesforce and SAP Integration  
+API for synchronizing partners, orders, and stock between **Salesforce** and SAP Business One.  
+**🔧 Technologies:** C#, .NET 8, REST API, Salesforce SDK.
 
-#### 🔸 API CrystalReports  
-API para geração e impressão de relatórios **Crystal Reports** em PDF sob demanda.  
-**🔧 Tecnologias:** C#, .NET 8, Crystal Reports SDK.
+#### 🔸 CrystalReports API  
+API for on-demand generation and printing of **Crystal Reports** in PDF format.  
+**🔧 Technologies:** C#, .NET 8, Crystal Reports SDK.
 
 ---
 
+## 📚 **Main Technologies Used**
 
-
-## 📚 **Tecnologias Principais Utilizadas**
-
-
-**Linguagens:**  
+**Languages:**  
 > C#, TypeScript  
 
 **Frameworks:**  
 > .NET Framework 4.8, .NET 6, .NET 7, .NET 8, Angular 19  
 
 **SAP B1 APIs:**  
-> DI API, UI API, Service Layer, B1SLayer  
+> DI API, UI API, Service Layer  
 
-**Bancos de Dados:**  
+**Databases:**  
 > SAP HANA, SQL Server  
